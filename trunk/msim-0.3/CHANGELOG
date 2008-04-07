@@ -1,0 +1,23 @@
+2004 03 26 : v0.2 :
+
+-- A *big* change in the maximum-likelihood receiver has resulted in a
+   considerable reduction of its complexity. We don't return the
+   closest-point to the original (QAM) lattice; we stay in the H3 lattice
+   and that saves as one pseudoinverse and several matrix operations per
+   block. For the moment it is necessary to see the code to understand
+   the details.
+
+-- The code is undergoing a beautification. We have already improved the
+   legibility of several functions. This is an undergoing effort that will
+   continue for the forseeable future.
+
+-- Along with the code readability changes, we're updating and improving
+   the comments in the code. Several were stale (we changed the code
+   without updating the comments). This effort will also continue for some
+   time.
+
+2004 03 12 : v0.1 :
+
+  - first public release
+
+$Id: CHANGELOG,v 1.1 2004/05/02 22:08:42 miguel Exp $
